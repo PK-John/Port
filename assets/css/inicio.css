@@ -1,21 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    background: #1f242d;
-    color: #fff;
-
-}
-
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,15 +34,15 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover, .navbar a.active {
     color: #0194c8;
 }
 
 .inicio {
     position: relative;
     width: 90%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
